@@ -1,0 +1,18 @@
+.locations {
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .locations h1 {
+    margin-bottom: 20px;
+  }
+  
+  .locations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  

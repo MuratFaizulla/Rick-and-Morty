@@ -1,0 +1,53 @@
+.episode-card {
+  background-color: rgb(60, 62, 68);
+  border-radius: 10px;
+  color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+    height: 120px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Обрезает содержимое, выходящее за пределы контейнера */
+  box-sizing: border-box; 
+}
+
+.episode-name {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  overflow: hidden; /* Обрезает содержимое внутри блока */
+}
+
+.episode-card span {
+  margin-left: 0.5rem;
+  white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+}
+
+.episode-card h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0; /* Убирает отступы для заголовка */
+  overflow: hidden; /* Обрезает текст, если он выходит за пределы блока */
+  text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+}
+
+.episode-card p {
+  color: #9E9E9E;
+  padding: 12px;
+  margin: 0; /* Убирает отступы для абзаца */
+  overflow: hidden; /* Обрезает текст, если он выходит за пределы блока */
+  text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+  white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+}
+
+
+
+
+.episode-card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.episode-card a:hover {
+  color: chocolate;
+}

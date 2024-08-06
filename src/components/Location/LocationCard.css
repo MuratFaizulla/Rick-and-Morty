@@ -1,0 +1,51 @@
+.location-card {
+  background-color: rgb(60, 62, 68);
+  border-radius: 10px;
+  color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  box-sizing: border-box; 
+  }
+  
+  .location-name{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    overflow: hidden;
+  }
+  .location-card span {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    white-space: nowrap; 
+  }
+
+  .location-card h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0; 
+  overflow: hidden; 
+  text-overflow: ellipsis;  }
+  
+  .location-card p {
+    color: #9E9E9E;
+    margin: 0;
+    padding: 12px;
+
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    }
+  
+  .location-card a {
+    /* display: inline-block; */
+    color: #ffff;
+    text-decoration: none;
+  }
+  
+  .location-card a:hover{
+    color: chocolate;
+  }

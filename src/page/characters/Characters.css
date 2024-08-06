@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(36,40,47);
+
+}
+.characters {
+  padding: 20px;
+  
+}
+
+.back-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.back-button {
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+
+.see-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.see-more-button {
+
+  color: #ffff;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: rgb(36,40,47) ;
+  border: 3.5px solid white;
+}
+
+
+

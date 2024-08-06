@@ -1,0 +1,22 @@
+.episodes {
+    padding: 20px;
+    background-color: rgb(36,40,47);
+  }
+  
+  .episodes h2 {
+    text-align: center;
+    color: #ffff;
+
+  }
+  .episodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }

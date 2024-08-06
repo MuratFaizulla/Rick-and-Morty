@@ -1,38 +1,98 @@
+/* App.css */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.half-screen {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.white-section {
+  background-color: white;
+  height: 41.5vh;
+}
+
+.black-section {
+  background-color: #282c34;
   color: white;
+  height: 58.5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  padding: 20px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header h1 {
+  margin: 0px;
+  color: rgb(32, 35, 41);
+  border: none;
+  font-weight: 900;
+  z-index: 1;
+  font-size: 5.625rem;
+  position: relative;
+}
+
+.App-header::before {
+  content: "";
+  /* background-image: url('../public/'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 150px;
+  z-index: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 80px;
+}
+
+.navigation a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navigation a:hover {
+  color: chocolate;
+}
+
+@media (max-width: 768px) {
+
+
+  .App-header::before {
+    height: 100px; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .navigation {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+  .white-section {
+    height: 50vh; /* Увеличение высоты белого сектора на мобильных устройствах */
+  }
+
+  .black-section {
+    height: 50vh; /* Увеличение высоты черного сектора на мобильных устройствах */
   }
 }
